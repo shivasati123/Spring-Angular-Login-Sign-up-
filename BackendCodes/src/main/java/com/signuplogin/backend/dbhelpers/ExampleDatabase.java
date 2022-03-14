@@ -14,12 +14,10 @@ public class ExampleDatabase implements UserServices {
 	@Autowired
 	private UserReposiotry user;
 
-	public User  createUser(User u) {
+	public void  createUser(User u) {
 		System.out.println("hello");
 		System.out.print(u);
-		User u1 = user.save(u);
-		System.out.println(u1);
-		return u1;
+		 user.save(u);
 	}
 
 

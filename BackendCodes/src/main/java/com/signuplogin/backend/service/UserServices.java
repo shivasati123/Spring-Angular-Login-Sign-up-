@@ -8,6 +8,6 @@ import com.signuplogin.backend.models.User;
 @Component
 public interface UserServices {
 	
-	public User createUser(User u);
+	public void createUser(User u);
 
 }
